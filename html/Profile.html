@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zapatería Stride & Shine</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script src="/Scripts/Scripts.js"></script>
+</head>
+
+<body class="signup-view">
+  <div class="content-container fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="/html/index.html">
+          <i class="fas fa-home"></i>
+          Zapatería Stride & Shine
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/html/Profile.html">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/Products.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/Cart.html">
+                <i class="fas fa-shopping-cart"></i> Carrito
+                <span class="badge badge-light"></span>
+              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/ContactUs.html">Contáctanos</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/Logout.html">Salir</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-md-4 mx-auto">
+        <div class="card-profile card text-center">
+          <div class="card-profile card-body">
+            <h1>Bienvenido</h1>
+            <div class="img-container">
+              <img src="/img/icon.png" alt="Profile Icon">
+            </div>
+            <h2>Gianmarco</h2>
+            <h4>Email: gianmarco20@gmail.com</h4>
+            <button class="button-profile btn" onclick="location.href='/html/Products.html'">Productos</button>
+            <button class="button-profile btn" onclick="location.href='/html/Cart.html'">Carrito</button>
+            <button class="button-profile btn" onclick="location.href='/html/Logout.html'">Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bot-button" data-toggle="modal" data-target="#chatBotModal">
+    <i class="fas fa-comments"></i>
+  </div>
+  <div class="modal fade" id="chatBotModal" tabindex="-1" role="dialog" aria-labelledby="chatBotLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-bot" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="chatBotLabel">Asistente Virtual</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <button class="btn btn-info btn-block" onclick="showResponse('recomendacion')">Recomendarme las mejores
+            zapatillas</button>
+          <button class="btn btn-info btn-block" onclick="showResponse('colores')">¿Qué colores son los más
+            recomendables en esta temporada?</button>
+          <button class="btn btn-info btn-block" onclick="showResponse('moda')">¿Cuáles están de moda?</button>
+          <div id="response" class="mt-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+</html>

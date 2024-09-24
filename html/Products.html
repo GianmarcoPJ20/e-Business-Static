@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zapatería Stride & Shine</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body class="view-listClient">
+  <div class="content-container fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="/html/index.html">
+          <i class="fas fa-home"></i>
+          Zapatería Stride & Shine
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/html/Profile.html">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/Products.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/Cart.html">
+                <i class="fas fa-shopping-cart"></i> Carrito
+                <span class="badge badge-light"></span>
+              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/ContactUs.html">Contáctanos</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/Logout.html">Salir</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+   <div class="container p-4" style="margin-top: 70px;">
+    <div class="row mb-4">
+      <div class="col-md-12">
+        <form id="filter-form">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Buscar productos..." aria-label="Buscar productos...">
+            <div class="input-group-append">
+              <button class="btn btn-secondary" type="submit">Buscar</button>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="type">Tipo:</label>
+              <select class="form-control" id="type">
+                <option value="">Selecciona</option>
+                <option value="zapatos">Zapatos</option>
+                <option value="zapatillas">Zapatillas</option>
+              </select>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="priceRange">Rango de Precio:</label>
+              <select class="form-control" id="priceRange">
+                <option value="">Selecciona</option>
+                <option value="0-50">S/. 0 - S/. 50</option>
+                <option value="51-100">S/. 51 - S/. 100</option>
+                <option value="101-200">S/. 101 - S/. 200</option>
+                <option value="201-300">S/. 201 - S/. 300</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <h1>Productos</h1>
+  <div class="container p-4">
+    <div class="row">
+      <!-- Producto 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-list text-center shadow-sm">
+          <div class="card-body">
+            <img onclick="location.href='/html/Details1.html'"
+              src="https://www.ultralon.com.pe/cdn/shop/files/UL22198W-2_1_798x798.jpg?v=1689973699"
+              class="img-fluid mb-3" style="max-height: 200px;">
+            <h3 class="card-title text-uppercase">Zapatillas Mujer Lifestyle Ultra Future RV</h3>
+            <p class="text-muted">Price: S/. 199.90</p>
+            <p class="text-muted">Stock: 15</p>
+            <button type="submit" class="btn btn-success">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-list text-center shadow-sm">
+          <div class="card-body">
+            <img onclick="location.href='/html/Details2.html'"
+              src="https://www.ultralon.com.pe/cdn/shop/files/UL23469W-1_1_798x798.jpg?v=1705773103"
+              class="img-fluid mb-3" style="max-height: 200px;">
+            <h3 class="card-title text-uppercase">Zapatillas Mujer Lifestyle Ultra Fresh RV-X</h3>
+            <p class="text-muted">Price: S/. 109.99</p>
+            <p class="text-muted">Stock: 15</p>
+            <button type="submit" class="btn btn-success">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-list text-center shadow-sm">
+          <div class="card-body">
+            <img onclick="location.href='/html/Details3.html'"
+              src="https://www.ultralon.com.pe/cdn/shop/products/UL9657F-5_1_1972e552-5f29-422f-b42c-575bde2fea60_798x798.jpg?v=1677258914"
+              class="img-fluid mb-3" style="max-height: 200px;">
+            <h3 class="card-title text-uppercase">Zapatillas Ultralon Running Ultra Lite para Mujer</h3>
+            <p class="text-muted">Price: S/. 99.90</p>
+            <p class="text-muted">Stock: 15</p>
+            <button type="submit" class="btn btn-success">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-list text-center shadow-sm">
+          <div class="card-body">
+            <img onclick="location.href='/html/Details4.html'"
+              src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/20434440_1/w=1500,h=1500,fit=pad"
+              class="img-fluid mb-3" style="max-height: 200px;">
+            <h3 class="card-title text-uppercase">Zapatillas Trail Running Hombre Adidas Tracefinder-traxion Azul</h3>
+            <p class="text-muted">Price: S/. 159.20</p>
+            <p class="text-muted">Stock: 15</p>
+            <button type="submit" class="btn btn-success">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-list text-center shadow-sm">
+          <div class="card-body">
+            <img onclick="location.href='/html/Details5.html'"
+              src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/19828872_1/w=1500,h=1500,fit=pad"
+              class="img-fluid mb-3" style="max-height: 200px;">
+            <h3 class="card-title text-uppercase">Zapatillas Running Hombre adidas Duramo RC Azul</h3>
+            <p class="text-muted">Price: S/. 140.03</p>
+            <p class="text-muted">Stock: 15</p>
+            <button type="submit" class="btn btn-success">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-list text-center shadow-sm">
+          <div class="card-body">
+            <img onclick="location.href='/html/Details6.html'"
+              src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/19009815_1/w=1500,h=1500,fit=pad"
+              class="img-fluid mb-3" style="max-height: 200px;">
+            <h3 class="card-title text-uppercase">Zapatillas Tenis Hombre Grand Court TD Lifestyle Urbanas Blanco
+            </h3>
+            <p class="text-muted">Price: S/. 159.20</p>
+            <p class="text-muted">Stock: 15</p>
+            <button type="submit" class="btn btn-success">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 7 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-list text-center shadow-sm">
+          <div class="card-body">
+            <img onclick="location.href='/html/Details7.html'"
+              src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/43245008_1/w=1500,h=1500,fit=pad"
+              class="img-fluid mb-3" style="max-height: 200px;">
+            <h3 class="card-title text-uppercase">Zapato De Vestir Mocasin Hombre Redwood</h3>
+            <p class="text-muted">Price: S/. 54.90</p>
+            <p class="text-muted">Stock: 15</p>
+            <button type="submit" class="btn btn-success">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 8 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-list text-center shadow-sm">
+          <div class="card-body">
+            <img onclick="location.href='/html/Details8.html'"
+              src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/20398868_1/w=1500,h=1500,fit=pad"
+              class="img-fluid mb-3" style="max-height: 200px;">
+            <h3 class="card-title text-uppercase">Zapatos De Vestir Mujer Aldo Dr Basic Vralg Beige</h3>
+            <p class="text-muted">Price: S/. 174.93</p>
+            <p class="text-muted">Stock: 15</p>
+            <button type="submit" class="btn btn-success">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 9 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-list text-center shadow-sm">
+          <div class="card-body">
+            <img onclick="location.href='/html/Details9.html'"
+              src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/19386132_1/w=1500,h=1500,fit=pad"
+              class="img-fluid mb-3" style="max-height: 200px;">
+            <h3 class="card-title text-uppercase">Zapatos De Vestir Mujer Aldo Stessy Negro</h3>
+            <p class="text-muted">Price: S/. 209.93</p>
+            <p class="text-muted">Stock: 15</p>
+            <button type="submit" class="btn btn-success">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
